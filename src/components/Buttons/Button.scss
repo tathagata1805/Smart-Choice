@@ -1,0 +1,46 @@
+.circular-button {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #007a96;
+    color: white;
+    outline: none;
+}
+
+.rectangular-button {
+    width: 100%;
+    border: none;
+    height: 3rem;
+    background-color: #007a96;
+    color: white;
+    border-radius: 0.25rem;
+    outline: none;
+}
+
+button:disabled {
+    background-color: #9fa9b9 !important;
+}
+
+.default-button.btn-primary {
+    background-color: #007a96 !important;
+    border-color: #007a96 !important;
+}
+
+.rectangular-button:focus:enabled,
+.rectangular-button:hover:enabled,
+.circular-button:focus:enabled,
+.circular-button:hover:enabled,
+.default-button:focus:enabled,
+.default-button:hover:enabled {
+    box-shadow: 0 0 10px rgba(46, 150, 181, 0.7);
+}
+
+.rectangular-button:active,
+.circular-button:active,
+.default-button:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}

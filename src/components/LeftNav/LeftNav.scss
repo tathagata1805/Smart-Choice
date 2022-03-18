@@ -1,0 +1,35 @@
+.left-nav {
+    height: 100%;
+    width: 20%;
+    border-right: 3px solid white;
+
+    .list {
+        border-radius: 5px;
+        height: 100%;
+        overflow: hidden;
+
+        ul {
+            >div {
+                padding: 1.5em 1.5em;
+            }
+        }
+    }
+
+}
+
+//mobile, i-pad, i-pad pro 
+@media only screen and (max-width:1024px) {
+    .left-nav {
+        display: none;
+    }
+}
+
+.theme-dark {
+    .left-nav {
+        border-right: 3px solid #213842;
+
+        .list {
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+ .MuiDrawer-root {
+     text-align: center;
+     font-family: "Poppins", sans-serif;
+     overflow: hidden;
+
+     .MuiList-root {
+         flex-grow: 1;
+     }
+ }
+
+ .drawer-header {
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     padding: 1rem;
+     border-bottom: 0.5px solid #007a96;
+
+     .image-wrapper {
+         margin: 0 1rem;
+
+         img {
+             max-height: 3rem;
+             border-radius: 50%;
+             background: #213842;
+             width: "auto";
+         }
+     }
+
+     span {
+         padding: 0 1.5em;
+     }
+ }
+
+
+ .drawer-footer {
+     padding: 1.5rem;
+ }
+
+ .drawer-item-list {
+     .MuiListItem-root {
+         padding: 1em 2em;
+     }
+ }

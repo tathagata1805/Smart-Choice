@@ -1,0 +1,27 @@
+.settings {
+    padding: 1em;
+    height: 100%;
+
+    .settings-card {
+        height: 100%;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    ul {
+        text-align: left;
+        padding: 2em;
+
+        li {
+            padding: 1em 0;
+        }
+    }
+}
+
+.theme-dark {
+    .settings {
+        .settings-card {
+            color: white;
+        }
+    }
+}

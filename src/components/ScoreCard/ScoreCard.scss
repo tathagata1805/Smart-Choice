@@ -1,0 +1,62 @@
+.score-card {
+    position: relative;
+    border-radius: 10px;
+    background: white;
+    width: 100%;
+    max-width: 20em;
+    padding: 0.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+
+    &.bg--success {
+        border-top: 10px solid #6ab76a;
+    }
+
+    &.bg--warning {
+        border-top: 10px solid #fdc51b;
+    }
+
+    &.bg--danger {
+        border-top: 10px solid #f16d77;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding-bottom: 0.5rem;
+
+        .total-score {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 2em;
+            width: 2em;
+            background: white;
+            box-shadow: 0 0 8px 0 #c1c1ca inset;
+            border-radius: 50%;
+        }
+    }
+
+    .delete-choice {
+        position: absolute;
+        top: -1em;
+        left: -1em;
+    }
+
+    .score-card-body {
+        overflow: hidden;
+        padding: 0.5rem;
+        height: 5em;
+    }
+}
+
+.theme-dark .score-card {
+    background: #213842;
+    color: white;
+
+    .total-score {
+        background: #111618;
+        color: white;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,45 @@
+.add-criteria {
+    border-radius: 4px;
+    background: white;
+    animation-duration: 0.5s;
+    padding: 0.5rem;
+
+    .display-body {
+        min-height: 30vh;
+        max-height: 55vh;
+        overflow: scroll;
+        padding: 0.5rem;
+
+        label {
+            width: 100%;
+            padding-top: 0.5rem;
+            text-align: left;
+
+            input {
+                width: 100%;
+                padding: 0.5rem;
+            }
+        }
+
+        .choice-label {
+            padding-top: 1rem;
+            text-align: left;
+        }
+    }
+
+    .button-wrapper {
+        padding: 0.5rem;
+    }
+
+}
+
+.theme-dark {
+    .add-criteria {
+        background: #213842;
+        color: white;
+
+        .MuiSlider-markLabel {
+            color: white;
+        }
+    }
+}

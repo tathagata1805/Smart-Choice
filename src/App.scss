@@ -1,0 +1,36 @@
+@import './commonStyles.scss';
+@import './globalStyles.scss';
+
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+.view-container {
+  display: flex;
+  height: calc(100vh - 3em);
+  /* Since the header's height is 3em */
+  background: #dadaea;
+
+  main {
+    flex-grow: 1;
+  }
+
+  //mobile
+  @media only screen and (min-width:600px) {
+    main {
+      width: 60%;
+    }
+  }
+
+  //desktop
+  @media only screen and (min-width:1025px) {
+    height: calc(100vh - 4em);
+  }
+}
+
+.view-container.theme-dark,
+body {
+  background: #111618;
+}
